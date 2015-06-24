@@ -1,3 +1,10 @@
+//Gif animaiton indtil siden er indlæst færdig
+// Wait for window load
+$(window).load(function() {
+	// Animate loader off screen
+	$(".se-pre-con").fadeOut("slow");;
+});
+
 //Variabel med array som indeholder de schemaer med de temaer der skal listes. Her kan der tilføjes og fjernes schemaer.
 var schemas = [ '_17_undervisning' , 'driftweb' , '_09_miljoebeskyttelse' , '_00_grundkort' , '_01_fysisk_plan_og_naturbeskyt' ];
 
