@@ -52,7 +52,11 @@ for (var i = 0; i < schemas.length; i++) {
 		}
 
 		function service(schema) {
-			return '<a href="http://ballerup.mapcentia.com/wfs/ballerup/'+schema+'/25832">WFS</a> <a href="http://ballerup.mapcentia.com/wms/ballerup/'+schema+'/">WMS</a>';
+			if(result.data[j].type == 'RASTER') {
+				return '<a href="http://ballerup.mapcentia.com/wms/ballerup/'+schema+'/">WMS</a>';
+			} else {
+				return '<a href="http://ballerup.mapcentia.com/wfs/ballerup/'+schema+'/25832">WFS</a> <a href="http://ballerup.mapcentia.com/wms/ballerup/'+schema+'/">WMS</a>';
+			}
 		}
 
 		if (title == null && abstract == null) {
