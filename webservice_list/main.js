@@ -6,7 +6,7 @@ $(window).load(function() {
 });
 
 //Variabel med array som indeholder de schemaer med de temaer der skal listes. Her kan der tilføjes og fjernes schemaer.
-var schemas = [ '_17_undervisning' , 'driftweb' , '_09_miljoebeskyttelse' , '_00_grundkort' , '_01_fysisk_plan_og_naturbeskyt' ];
+var schemas = [ '_17_undervisning' , 'driftweb' , '_09_miljoebeskyttelse' , '_00_grundkort' , '_01_fysisk_plan_og_naturbeskyt' , 'proj_motion' ];
 
 //Det ydre loop tager schemanavn og smider ind i url'en som bruges i getJson funktion som tilknyttes variablen result
 for (var i = 0; i < schemas.length; i++) {
