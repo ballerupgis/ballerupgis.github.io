@@ -2,7 +2,7 @@
 // Wait for window load
 $(window).load(function() {
 	// Animate loader off screen
-	$(".se-pre-con").fadeOut("slow");;
+	$(".se-pre-con").fadeOut("slow");
 });
 
 //Variabel med array som indeholder de schemaer med de temaer der skal listes. Her kan der tilføjes og fjernes schemaer.
