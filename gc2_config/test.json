@@ -1,0 +1,10 @@
+{
+  "brandName": "Dette er en test",
+  "aboutBox": "<p>Test test test.....</p>",
+  "baseLayers": [
+    {"id": "osm", "name": "Open Street Map"},
+    {"id": "stamenTonerLite", "name": "Stamen Toner Light"},
+    {"id": "googleStreets", "name": "Google Streets"},
+    {"id": "googleHybrid", "name": "Google Hybrid"}
+  ]
+}
