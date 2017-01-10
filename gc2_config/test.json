@@ -10,5 +10,5 @@
   
   // Aktiver extensions
   // ==================
-  enabledExtensions: ["conflictSearch"],
+  "enabledExtensions": ["conflictSearch"],
 }
