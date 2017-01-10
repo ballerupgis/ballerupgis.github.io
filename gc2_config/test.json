@@ -6,10 +6,6 @@
     {"id": "stamenTonerLite", "name": "Stamen Toner Light"},
     {"id": "googleStreets", "name": "Google Streets"},
     {"id": "googleHybrid", "name": "Google Hybrid"}
-  ],
-  
-  // Aktiver extensions
-  // ==================
-  
+  ],  
   "enabledExtensions": ["conflictSearch"]
 }
