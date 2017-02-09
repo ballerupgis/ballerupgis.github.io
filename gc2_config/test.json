@@ -13,7 +13,7 @@
     {"id": "googleStreets", "name": "Google Streets"},
     {"id": "googleHybrid", "name": "Google Hybrid"}
   ],
-  enabledExtensions: [
+  "enabledExtensions": [
         "conflictSearch"
    ]
 }
