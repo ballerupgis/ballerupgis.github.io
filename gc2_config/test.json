@@ -1,11 +1,15 @@
 {
-  "brandName": "Dette er en test",
-  "aboutBox": "<p>Test test test.....</p>",
   "baseLayers": [
+    {
+      "id": "proj_belysning_indmaaling.ortofoto", "name": "Ortofoto 2016", "db": "ballerup",
+      "config": {
+          "maxZoom": 23,
+          "maxNativeZoom": 21,
+          "attribution": "Kortforsyningen"
+      },
     {"id": "osm", "name": "Open Street Map"},
     {"id": "stamenTonerLite", "name": "Stamen Toner Light"},
     {"id": "googleStreets", "name": "Google Streets"},
     {"id": "googleHybrid", "name": "Google Hybrid"}
-  ],  
-  "enabledExtensions": ["conflictSearch"]
+  ]
 }
