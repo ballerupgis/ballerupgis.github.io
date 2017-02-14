@@ -2,5 +2,8 @@
   "enabledExtensions": [
         "findNearest"
     ],
-  "brandName": "Furesø Kommune"
+  "brandName": "Furesø Kommune",
+  "searchConfig": {
+        "komkode": "190"
+    }
 }
