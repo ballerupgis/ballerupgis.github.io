@@ -1,6 +1,7 @@
 {
   "enabledExtensions": [
-        "findNearest"
+        "findNearest",
+        "conflictSearch"
     ],
   "brandName": "Furesø Kommune",
   "searchConfig": {
