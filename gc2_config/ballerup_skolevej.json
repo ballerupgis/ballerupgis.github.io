@@ -1,0 +1,9 @@
+
+{
+  "enabledExtensions": [
+        "findNearest"
+    ],
+  "searchConfig": {
+        "komkode": "151"
+    }
+}
