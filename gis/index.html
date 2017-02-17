@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Ballerups WebGIS løsninger</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|News+Cycle" rel="stylesheet">
+
+    <!--
+    <script src="js/main.js" charset="utf-8"></script>
+    -->
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-faded">
+        <a class="navbar-brand" href="#"><strong>Ballerups GIS univers</strong></a>
+    </nav>
+
+
+
+    <div class="container">
+        <div class="row" id="button-grid">
+
+
+            <!--
+            GeoCloud 2
+            -->
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card">
+                    <img class="card-img-top" src="img/gc2.png" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">GeoCloud</h4>
+                        <p class="card-text">WebGIS Løsning til databehandling, styling og visning af webkort</p>
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-primary dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Gå til GC2
+                      </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="http://gc2" target="_blank">Intern</a>
+                                <a class="dropdown-item" href="http://ballerup.mapcentia.com" target="_blank">Ekstern</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--
+            SEMAWI
+            -->
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card">
+                    <img class="card-img-top" src="img/wiki.png" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">Wiki</h4>
+                        <p class="card-text">Dokumentation af bl.a. data, systemer og brugere bagt ind i en sematisk wiki</p>
+                        <a href="http://wiki:12345/" target="_blank" class="btn btn-primary">Gå til WIKI</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!--
+            VIDI
+            -->
+
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card">
+                    <img class="card-img-top" src="img/vidi.png" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">Vidi</h4>
+                        <p class="card-text">Brugergrænseflade til visning af kort, med mulighed for at udvide med forskellige moduler</p>
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-primary dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Gå til VIDI
+                      </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="http://gc2:3000/app/ballerup/konflikt_bke/#stamenToner/12/12.3563/55.731/" target="_blank">Simpel</a>
+                                <a class="dropdown-item" href="http://gc2:3000/app/ballerup/_17_undervisning/?config=ballerup_skolevej.json#stamenToner/13/12.4002/55.738/" target="_blank">Ruteberegning</a>
+                                <a class="dropdown-item" href="http://gc2:3000/app/ballerup/konflikt_bke/?config=konflikt.json#osm/13/12.3573/55.7343/" target="_blank">Interessesøger</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--
+            OPENDATA DK
+            -->
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card">
+                    <img class="card-img-top" src="img/opendata.svg" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">Open data DK</h4>
+                        <p class="card-text">Her udstilles Ballerups og en række andre kommuners data frit til hele verdenen</p>
+                        <a href="http://www.portal.opendata.dk/organization/ballerup-kommune" target="_blank" class="btn btn-primary">Gå til Opendata.dk</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
