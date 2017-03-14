@@ -1,4 +1,7 @@
 {
+  "schemata": [
+    "proj_vinterudbud_2016"
+  ],
   "baseLayers": [
     {
       "id": "proj_belysning_indmaaling.ortofoto", "name": "Ortofoto 2016", "db": "ballerup",
