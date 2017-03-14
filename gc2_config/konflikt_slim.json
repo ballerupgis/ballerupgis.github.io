@@ -12,7 +12,8 @@
     {"id": "stamenTonerLite", "name": "Stamen Toner Light"}
   ],
   "enabledExtensions": [
-        "conflictSearch"
+        "conflictSearch",
+        "layerSearch"
   ],
   "template": "min.tmpl",
   "activateMainTab": "conflict"
