@@ -1,0 +1,16 @@
+{
+  "baseLayers": [
+      {"id": "osm", "name": "Open Street Map"},
+      {"id": "stamenTonerLite", "name": "Stamen Toner Light"}
+  ],
+  "enabledExtensions": [
+        "conflictSearch"
+  ],
+  
+  searchConfig: {
+        komkode: "190"
+  },
+  
+  "template": "min.tmpl",
+  "activateMainTab": "conflict"
+}
