@@ -4,7 +4,10 @@
       {"id": "stamenTonerLite", "name": "Stamen Toner Light"}
   ],
   "enabledExtensions": [
-        "conflictSearch"
+        "conflictSearch",
+        "findNearest",
+        "streetView",
+        "layerSearch"
   ],
   
   "searchConfig": {
@@ -14,3 +17,5 @@
   "template": "min.tmpl",
   "activateMainTab": "conflict"
 }
+
+"brandName": "furesoe"
