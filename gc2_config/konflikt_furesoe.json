@@ -7,8 +7,8 @@
         "conflictSearch"
   ],
   
-  searchConfig: {
-        komkode: "190"
+  "searchConfig": {
+        "komkode": "190"
   },
   
   "template": "min.tmpl",
