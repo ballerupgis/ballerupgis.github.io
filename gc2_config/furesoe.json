@@ -6,8 +6,7 @@
   "enabledExtensions": [
         "conflictSearch",
         "findNearest",
-        "streetView",
-        "layerSearch"
+        "streetView"
   ],
   
   "searchConfig": {
