@@ -13,8 +13,9 @@
         "komkode": "190"
   },
   
-  "template": "min.tmpl",
-  "activateMainTab": "conflict"
+  "template": "default.tmpl",
+  
+  "brandName": "furesoe"
+
 }
 
-"brandName": "furesoe"
