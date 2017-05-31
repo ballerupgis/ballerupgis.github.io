@@ -16,6 +16,8 @@
   ],
   "enabledExtensions": [
         "conflictSearch",
-        "layerSearch"
+        "layerSearch",
+        "coordinates",
+        "streetView"
    ]
 }
