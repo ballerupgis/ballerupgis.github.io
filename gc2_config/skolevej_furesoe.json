@@ -1,9 +1,17 @@
 {
+  
+  "schemata": [
+    "data_udstilning"
+  ],
+  
   "enabledExtensions": [
         "findNearest"
-    ],
+  ],
+  
   "brandName": "Furesø Kommune",
+  
   "searchConfig": {
         "komkode": "190"
-    }
+  }
+  
 }
