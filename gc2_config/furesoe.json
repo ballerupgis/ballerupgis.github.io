@@ -19,6 +19,8 @@
         "komkode": "190"
   },
   
+  "enabledPrints": ["print"],
+  
   "template": "default.tmpl",
   
   "brandName": "Furesø Kommune",
