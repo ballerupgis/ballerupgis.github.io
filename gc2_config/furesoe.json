@@ -1,12 +1,18 @@
 {
+  "schemata": [
+    "data_udstilning"
+  ],
+  
   "baseLayers": [
       {"id": "osm", "name": "Open Street Map"},
       {"id": "stamenTonerLite", "name": "Stamen Toner Light"}
   ],
+  
   "enabledExtensions": [
         "conflictSearch",
         "findNearest",
-        "streetView"
+        "streetView",
+        "coordinates"
   ],
   
   "searchConfig": {
@@ -15,7 +21,9 @@
   
   "template": "default.tmpl",
   
-  "brandName": "Furesø Kommune"
+  "brandName": "Furesø Kommune",
+  
+  "about": "Furesø Kommunes kort på nettet"
 
 }
 
