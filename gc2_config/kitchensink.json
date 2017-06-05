@@ -25,6 +25,14 @@
         "findNearest"
   ],
   
-  "template": "default.tmpl"
+  "template": "default.tmpl",
+  
+  "enabledPrints": ["print"],
+  
+  "template": "default.tmpl",
+  
+  "brandName": "Ballerup Kommune",
+  
+  "aboutBox": "Ballerup Kommunes kort på nettet"
   
   }
