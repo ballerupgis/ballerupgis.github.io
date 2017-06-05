@@ -25,6 +25,10 @@
         "findNearest"
   ],
   
+  "searchConfig": {
+        "komkode": "151"
+  },
+  
   "template": "default.tmpl",
   
   "enabledPrints": ["print"],
