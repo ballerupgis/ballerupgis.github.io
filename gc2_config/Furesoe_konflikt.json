@@ -4,6 +4,14 @@
   ],
 	
   "baseLayers": [
+	{
+      "id": "proj_belysning_indmaaling.ortofoto", "name": "Ortofoto 2016", "db": "ballerup",
+      "config": {
+          "maxZoom": 23,
+          "maxNativeZoom": 21,
+          "attribution": "Kortforsyningen"
+      }
+    },
     {"id": "googleStreets","name":"Google Street"},
     {"id": "osm", "name": "Open Street Map"},
     {"id": "stamenTonerLite", "name": "Stamen Toner Light"}
