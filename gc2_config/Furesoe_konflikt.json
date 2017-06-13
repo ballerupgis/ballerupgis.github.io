@@ -2,20 +2,25 @@
   "schemata": [
     "konflikt"
   ],
+	
   "baseLayers": [
-    {"id":"googleStreets","name":"Google Street"},
+    {"id": "googleStreets","name":"Google Street"},
     {"id": "osm", "name": "Open Street Map"},
     {"id": "stamenTonerLite", "name": "Stamen Toner Light"}
   ],
+	
   "enabledExtensions": [
         "conflictSearch"
   ],
   
   "brandName": "Furesø Kommune",
+	
   "searchConfig": {
         "komkode": "190"
 		},
+	
   "template": "min.tmpl",
+	
   "activateMainTab": "conflict"
   
 }
