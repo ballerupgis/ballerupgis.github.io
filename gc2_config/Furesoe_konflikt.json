@@ -11,10 +11,10 @@
         "conflictSearch"
   ],
   
-  "brandName": "Furesø Kommune",
+  "brandName": "FuresÃ¸ Kommune",
   "searchConfig": {
         "komkode": "190"
-		}
+		},
   "template": "min.tmpl",
   "activateMainTab": "conflict"
   
