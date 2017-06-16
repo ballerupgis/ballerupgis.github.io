@@ -4,6 +4,12 @@
     "_17_undervisning"
   ],
   
+  "baseLayers": [
+    {"id": "googleStreets","name":"Google Street"},
+    {"id": "osm", "name": "Open Street Map"},
+    {"id": "stamenTonerLite", "name": "Stamen Toner Light"}
+  ],
+  
   "enabledExtensions": [
         "findNearest"
   ],
