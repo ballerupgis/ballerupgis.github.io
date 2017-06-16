@@ -1,7 +1,7 @@
 {
   
   "schemata": [
-    "data_udstilning"
+    "_17_undervisning"
   ],
   
   "enabledExtensions": [
@@ -12,6 +12,10 @@
   
   "searchConfig": {
         "komkode": "190"
-  }
+  },
+  
+  "template": "min.tmpl",
+  
+  "activateMainTab": "findnearest"
   
 }
