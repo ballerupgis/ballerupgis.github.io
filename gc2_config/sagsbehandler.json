@@ -19,7 +19,10 @@
   "enabledExtensions": [
         "conflictSearch",
         "streetView",
-        "layerSearch"
+        "skraafoto",
+        "layerSearch",
+        "coordinates",
+        "findNearest"
   ],
   
   "searchConfig": {
