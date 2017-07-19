@@ -19,7 +19,7 @@
   "enabledExtensions": [
         "conflictSearch",
         "streetView",
-        "layerSearch",
+        "layerSearch"
   ],
   
   "searchConfig": {
