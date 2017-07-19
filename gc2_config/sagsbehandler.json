@@ -19,10 +19,8 @@
   "enabledExtensions": [
         "conflictSearch",
         "streetView",
-        "skraafoto",
         "layerSearch",
-        "coordinates",
-        "findNearest"
+        "coordinates"
   ],
   
   "searchConfig": {
@@ -35,8 +33,8 @@
   
   "template": "default.tmpl",
   
-  "brandName": "Ballerup Kommune",
+  "brandName": "Sagsbehandler GIS",
   
-  "aboutBox": "Ballerup Kommunes kort på nettet"
+  "aboutBox": "Denne løsning er rettet mod sagsbehandling"
   
   }
