@@ -1,6 +1,5 @@
 {
   "schemata": [
-    "web_sagsbehandler",
     "konflikt_bke"
   ],
   
@@ -39,4 +38,5 @@
   
   "aboutBox": "Denne løsning er rettet mod sagsbehandling"
   
-  }
+}
+
