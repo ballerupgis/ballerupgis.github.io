@@ -1,6 +1,7 @@
 {
   "schemata": [
-    "web_sagsbehandler"
+    "web_sagsbehandler",
+    "konflikt_bke"
   ],
   
   "baseLayers": [
