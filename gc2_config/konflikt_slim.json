@@ -1,4 +1,7 @@
-{
+{ 
+  "schemata": [    
+    "konflikt_bke"  
+  ],
   "baseLayers": [
     {
       "id": "proj_belysning_indmaaling.ortofoto", "name": "Ortofoto 2016", "db": "ballerup",
