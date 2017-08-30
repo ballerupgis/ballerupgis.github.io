@@ -1,0 +1,10 @@
+#map { height: 500px; }
+
+h1 {
+  color: rgb(34, 190, 212);
+}
+
+.table td {
+    padding: 0.5rem;
+    font-size: 12px;
+}
