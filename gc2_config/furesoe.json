@@ -12,7 +12,8 @@
         "conflictSearch",
         "findNearest",
         "streetView",
-        "coordinates"
+        "coordinates",
+        "ejendom"
   ],
   
   "searchConfig": {
