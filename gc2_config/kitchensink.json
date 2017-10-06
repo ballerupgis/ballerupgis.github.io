@@ -22,7 +22,9 @@
         "skraafoto",
         "layerSearch",
         "coordinates",
-        "findNearest"
+        "findNearest",
+        "isochrone",
+        "ejendom"
   ],
   
   "searchConfig": {
