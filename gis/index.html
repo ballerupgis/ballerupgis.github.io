@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    <link rel="icon" href="img/bal_icon.png">
     <title>Ballerups WebGIS løsninger</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
@@ -12,14 +13,11 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|News+Cycle" rel="stylesheet">
 
-    <!--
-    <script src="js/main.js" charset="utf-8"></script>
-    -->
 </head>
 
 <body>
     <nav class="navbar navbar-light bg-faded">
-        <a class="navbar-brand" href="#"><strong>Ballerups GIS univers</strong></a>
+        <a class="navbar-brand" href="#"><strong>BALLERUPS GIS-UNIVERS</strong></a>
     </nav>
 
 
@@ -29,21 +27,25 @@
 
 
             <!--
-            GeoCloud 2
+            QGIS
             -->
-            <div class="col-lg-3 col-md-6 col-sm-12">
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="card">
-                    <img class="card-img-top" src="img/gc2.png" alt="Card image cap">
+                    <img class="card-img-top" src="img/qgis.png" alt="Card image cap">
                     <div class="card-block">
-                        <h4 class="card-title">GeoCloud</h4>
-                        <p class="card-text">WebGIS Løsning til databehandling, styling og visning af webkort</p>
+                        <h4 class="card-title">QGIS</h4>
+                        <p class="card-text">Dokumentation, vejledning og tutorials til QGIS på dansk og engelsk</p>
                         <div class="dropdown">
-                            <button type="button" class="btn btn-primary dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Gå til GC2
-                      </button>
+                        <button type="button" class="btn btn-primary dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dokumentation
+                        </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <a class="dropdown-item" href="http://gc2" target="_blank">Intern</a>
-                                <a class="dropdown-item" href="http://ballerup.mapcentia.com" target="_blank">Ekstern</a>
+                                <a class="dropdown-item" href="https://www.youtube.com/watch?v=S9NqNeXFvhY&list=PLfg4eksb3j7f4wzSWHtEfJevRWIrSKPYJ" target="_blank">Videovejledning</a>
+                                <a class="dropdown-item" href="https://github.com/ballerupgis/QGIS-vejledning/wiki" target="_blank">Tekstvejledning</a>
+                                <a class="dropdown-item" href="http://docs.qgis.org/latest/en/docs/user_manual/" target="_blank">QGIS dokumentation</a>
+                                <a class="dropdown-item" href="http://www.qgistutorials.com/en/" target="_blank">Tutorials</a>
+                                <a class="dropdown-item" href="https://www.youtube.com/watch?v=6NtHSua3zw0&list=PLNBeueOmuY163iwu4VpZdjqqdU1HkRTP" target="_blank">Video tutorials</a>
                             </div>
                         </div>
                     </div>
@@ -52,26 +54,10 @@
 
 
             <!--
-            SEMAWI
-            -->
-            <div class="col-lg-3 col-md-6 col-sm-12">
-                <div class="card">
-                    <img class="card-img-top" src="img/wiki.png" alt="Card image cap">
-                    <div class="card-block">
-                        <h4 class="card-title">Wiki</h4>
-                        <p class="card-text">Dokumentation af bl.a. data, systemer og brugere bagt ind i en sematisk wiki</p>
-                        <a href="http://wiki/" target="_blank" class="btn btn-primary">Gå til WIKI</a>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <!--
             VIDI
             -->
 
-            <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="card">
                     <img class="card-img-top" src="img/vidi.png" alt="Card image cap">
                     <div class="card-block">
@@ -95,9 +81,49 @@
 
 
             <!--
+            SEMAWI
+            -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img class="card-img-top" src="img/wiki.png" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">Wiki</h4>
+                        <p class="card-text">Dokumentation af bl.a. data, systemer og brugere bagt ind i en sematisk wiki</p>
+                        <a href="http://wiki/" target="_blank" class="btn btn-primary">Gå til WIKI</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row" id="button-grid">
+
+            <!--
+            GeoCloud 2
+            -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img class="card-img-top" src="img/gc2.png" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">GeoCloud</h4>
+                        <p class="card-text">WebGIS Løsning til databehandling, styling og visning af webkort</p>
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-primary dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Gå til GC2
+                      </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="http://gc2" target="_blank">Intern</a>
+                                <a class="dropdown-item" href="http://ballerup.mapcentia.com" target="_blank">Ekstern</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--
             OPENDATA DK
             -->
-            <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="card">
                     <img class="card-img-top" src="img/opendata.svg" alt="Card image cap">
                     <div class="card-block">
@@ -108,9 +134,34 @@
                 </div>
             </div>
 
-        </div>
 
+      <!--
+            KIBANA
+            -->
+      <div class="col-md-4 col-sm-12 d-flex align-items-stretch">
+        <div class="card">
+          <img class="card-img-top" src="img/kibana.png" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">Kibana</h4>
+            <p class="card-text">Interaktive dashboards giver mulighed for at udforske og filtrere forsekellige data</p>
+            <div class="dropdown">
+              <button type="button" class="btn btn-primary dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Gå til Kibana
+                      </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="http://kibana/app/kibana#/dashboard/Borgertip?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-2y%2Cmode%3Aquick%2Cto%3Anow))" target="_blank" data-toggle="tooltip" data-placement="right" title="">Borgertip</a>
+                <a class="dropdown-item" href="http://kibana/app/kibana#/dashboard/Belysning?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-2y%2Cmode%3Aquick%2Cto%3Anow))" target="_blank" data-toggle="tooltip" data-placement="right" title="">Belysning</a>
+                <a class="dropdown-item" href="http://kibana/app/kibana#/dashboard/64b006d0-ace7-11e7-a9ae-7fca46be9aa7?_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-90d%2Cmode%3Aquick%2Cto%3Anow))" target="_blank" data-toggle="tooltip" data-placement="right" title="">Facebook Stemning</a>
+                <a class="dropdown-item" href="https://regiongis.github.io/erhvervsinfo/" data-toggle="tooltip" data-placement="right" title="Samling af løsninger rettet mod erhvervsafdelingen i kommuner herunder Kibana dashboards for CVR" target="_blank">Erhvevsinfo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        </div><!--ROW -->
     </div>
+    <!--CONTAINTER -->
 
 </body>
 
