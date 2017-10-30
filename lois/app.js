@@ -1,58 +1,5 @@
 //Global map variable for leaflet map
-var map
-var geom1 = {
-    "type": "FeatureCollection",
-    "crs": {
-        "type": "name",
-        "properties": {
-            "name": "urn:ogc:def:crs:EPSG::25832"
-        }
-    },
-
-    "features": [{
-        "type": "Feature",
-        "properties": {},
-        "geometry": {
-            "type": "Polygon",
-            "coordinates": [
-                [
-                    [711141.582935461541638, 6180973.055935187265277],
-                    [711202.252095026546158, 6181437.306895336136222],
-                    [711695.518740185187198, 6181110.220991594716907],
-                    [711141.582935461541638, 6180973.055935187265277]
-                ]
-            ]
-        }
-    }]
-}
-
-var geom2 = {
-    "type": "FeatureCollection",
-    "name": "lois",
-    "crs": {
-        "type": "name",
-        "properties": {
-            "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
-        }
-    },
-    "features": [{
-        "type": "Feature",
-        "properties": {},
-        "geometry": {
-            "type": "Polygon",
-            "coordinates": [
-                [
-                    [12.393174349209595, 55.719250658652406],
-                    [12.396781430202465, 55.717872156362134],
-                    [12.394437976309009, 55.709463292391497],
-                    [12.382559881574528, 55.71194459651398],
-                    [12.385592586613118, 55.7147935012472],
-                    [12.393174349209595, 55.719250658652406]
-                ]
-            ]
-        }
-    }]
-}
+var map;
 
 var model = {
     geometry: {},
@@ -64,7 +11,8 @@ var model = {
             "method": "POST",
             "headers": {
                 "content-type": "application/json",
-                "cache-control": "no-cache"
+                "cache-control": "no-cache",
+                "authorization": "NTLM TlRMTVNTUAADAAAAGAAYAFAAAAAYABgAaAAAAAAAAABIAAAACAAIAEgAAAAAAAAAUAAAAAAAAACAAAAABYKIogUBKAoAAAAPYQBuAGQAYgB1Iu3pNuufEgAAAAAAAAAAAAAAAAAAAAA3q2ZAEZCSBl56fo7remeEUNvjJ8L+5YU="                
             },
             "processData": false,
             "data": JSON.stringify(geom)
@@ -81,9 +29,6 @@ var model = {
 var controller = {
     init: function() {
         view.init();
-    },
-    transformGeom: function(geom) {
-
     }
 }
 
@@ -126,12 +71,20 @@ var view = {
 
         map.on('draw:created', function(e) {
             var type = e.layerType,
-                layer = e.layer;
+                layer = e.layer,
+                crs = {
+                    "type": "name", 
+                    "properties": {
+                        "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+                    }
+                };
 
             // get geojson and store in model
             var shape = layer.toGeoJSON()
-            var shape_for_lois = JSON.stringify(shape);
-            model.geometry = shape_for_lois
+            model.geometry = shape;
+            // add crs def to geojson
+            model.geometry.crs = crs
+            
 
             drawnItems.addLayer(layer);
         });
@@ -142,6 +95,7 @@ var view = {
 
         map.on('draw:deleted', function() {
             // Update db to save latest changes.
+            model.geometry = {}
         });
     },
     showReport: function() {
@@ -152,7 +106,7 @@ var view = {
                 $('#report').append('<table class="table table-hover"><tbody id="t-data' + i + '"></tbody></table>')
 
                 $.each(el.Result.ReportGeoLS2['Table' + i], function(key, val) {
-                    if (key.substring(0, 3) == 'Pct') {
+                    if (String(key).substring(0, 3) == 'Pct') {
                         $('#t-data' + i).append('<tr><td>' + key + '</td><td><div class="progress"><div class="progress-bar" role="progressbar" style="width: ' + val + '%;" aria-valuenow="' + val + '" aria-valuemin="0" aria-valuemax="100">' + val + '%</div></div></td></tr>');
                     } else {
                         $('#t-data' + i).append('<tr><td>' + key + '</td><td>' + val + '</td></tr>');
@@ -168,6 +122,7 @@ var view = {
                 alert('Du mangler at tegne et område på kortet');
             } else {
                 console.log(model.geometry);
+                model.getReport(model.geometry)
                 buildReport();
             }
         });
