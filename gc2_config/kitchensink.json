@@ -30,7 +30,6 @@
   "enabledExtensions": [
         "conflictSearch",
         "streetView",
-        //"skraafoto",
         "layerSearch",
         "coordinates",
         "findNearest",
