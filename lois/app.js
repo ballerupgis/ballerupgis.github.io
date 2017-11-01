@@ -3,6 +3,7 @@ var map;
 
 var model = {
     geometry: {},
+    report: {},
     getReport: function(geom) {
         var settings = {
             "async": true,
@@ -11,14 +12,15 @@ var model = {
             "method": "POST",
             "headers": {
                 "content-type": "application/json",
-                "cache-control": "no-cache",
-                "authorization": "NTLM TlRMTVNTUAADAAAAGAAYAFAAAAAYABgAaAAAAAAAAABIAAAACAAIAEgAAAAAAAAAUAAAAAAAAACAAAAABYKIogUBKAoAAAAPYQBuAGQAYgB1Iu3pNuufEgAAAAAAAAAAAAAAAAAAAAA3q2ZAEZCSBl56fo7remeEUNvjJ8L+5YU="                
+                "cache-control": "no-cache"
             },
             "processData": false,
             "data": JSON.stringify(geom)
         }
 
         $.ajax(settings).done(function(response) {
+            model.report = response
+            view.showReport(model.report)
             console.log(response);
         }).fail(function(e) {
           console.log('Response error ' + e.responseText)
@@ -36,11 +38,11 @@ var view = {
     init: function() {
         this.renderMap();
         this.addDrawtool();
-        this.showReport();
+        this.events();
     },
     renderMap: function() {
         // create a map in the "map" div, set the view to a given place and zoom
-        map = L.map('map').setView([55, 12], 8);
+        map = L.map('map').setView([55.731267, 12.363396], 13);
 
         // add an OpenStreetMap tile layer
         L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
@@ -98,23 +100,23 @@ var view = {
             model.geometry = {}
         });
     },
-    showReport: function() {
-        function buildReport() {
-            $.each(data.Result, function(index, el) {
-                var i = index + 1;
-                $('#report').append('<h1>' + el.SheetName + '</h1>')
-                $('#report').append('<table class="table table-hover"><tbody id="t-data' + i + '"></tbody></table>')
+    showReport: function(res) {
+        $.each(res.Result, function(index, el) {
+            var i = index + 1;
+            $('#report').append('<h1>' + el.SheetName + '</h1>')
+            $('#report').append('<table class="table table-hover"><tbody id="t-data' + i + '"></tbody></table>')
 
-                $.each(el.Result.ReportGeoLS2['Table' + i], function(key, val) {
-                    if (String(key).substring(0, 3) == 'Pct') {
-                        $('#t-data' + i).append('<tr><td>' + key + '</td><td><div class="progress"><div class="progress-bar" role="progressbar" style="width: ' + val + '%;" aria-valuenow="' + val + '" aria-valuemin="0" aria-valuemax="100">' + val + '%</div></div></td></tr>');
-                    } else {
-                        $('#t-data' + i).append('<tr><td>' + key + '</td><td>' + val + '</td></tr>');
-                    }
-                });
+            $.each(el.Result.ReportGeoLS2['Table' + i], function(key, val) {
+                if (String(key).substring(0, 3) == 'Pct') {
+                    $('#t-data' + i).append('<tr><td>' + key + '</td><td><div class="progress"><div class="progress-bar" role="progressbar" style="width: ' + val + '%;" aria-valuenow="' + val + '" aria-valuemin="0" aria-valuemax="100">' + val + '%</div></div></td></tr>');
+                } else {
+                    $('#t-data' + i).append('<tr><td>' + key + '</td><td>' + val + '</td></tr>');
+                }
             });
-        }
-
+        });
+    },
+        
+    events: function () {
         //eventbinding
         $('#getreport').click(function() {
             // check if polygon is drawed
@@ -122,11 +124,10 @@ var view = {
                 alert('Du mangler at tegne et område på kortet');
             } else {
                 console.log(model.geometry);
-                model.getReport(model.geometry)
-                buildReport();
+                model.getReport(model.geometry);
             }
         });
-    }
+    }   
 }
 
 //https://stackoverflow.com/a/24019108
