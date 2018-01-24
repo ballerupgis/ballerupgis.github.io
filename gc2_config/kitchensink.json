@@ -41,13 +41,6 @@
         "komkode": "151"
   },
   
-   "extensionConfig": {
-        "skolevej": {
-            "host": "http://gc2",
-            "db": "ballerup",
-            "table": "skoler.skoler"
-        }
-    },
   
   "template": "default.tmpl",
   
