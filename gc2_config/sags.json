@@ -11,7 +11,7 @@
         "maxZoom": 23,
         "maxNativeZoom": 21,
         "attribution": "Kortforsyningen"
-    },
+      }
     },
     {"id": "osm", "name": "Open Street Map"},
     {"id": "stamenTonerLite", "name": "Stamen Toner Light"},
