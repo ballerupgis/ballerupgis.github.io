@@ -6,17 +6,6 @@
   
   "baseLayers": [
     {
-      "id": "geodk.bright",
-      "name": "GeoDanmark kort",
-      "db": "baselayers",
-      "host": "https://gc2.io",
-      "config": {
-        "maxZoom": 21,
-        "maxNativeZoom": 19,
-        "attribution": "&copy; SDFE & MapCentia ApS"
-      }
-    },
-    {
       "id": "proj_belysning_indmaaling.ortofoto", "name": "Ortofoto 2017", "db": "ballerup",
       "config": {
         "maxZoom": 23,
