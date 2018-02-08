@@ -1,0 +1,41 @@
+{
+  "schemata": [
+    "tag:sagsbehandler"
+  ],
+  
+  "baseLayers": [
+    {
+      "id": "proj_belysning_indmaaling.ortofoto", "name": "Ortofoto 2017", "db": "ballerup",
+      "config": {
+          "maxZoom": 23,
+          "maxNativeZoom": 21,
+          "attribution": "Kortforsyningen"
+      }
+    },
+    {"id": "osm", "name": "Open Street Map"},
+    {"id": "stamenTonerLite", "name": "Stamen Toner Light"},
+    {"id": "googleStreets","name":"Google Street"},
+    {"id": "googleHybrid","name":"Google Hybrid"}
+  ],
+  
+  "enabledExtensions": [
+        "conflictSearch",
+        "streetView",
+        "layerSearch"
+  ],
+  
+  "searchConfig": {
+        "komkode": "151"
+  },
+  
+  "template": "default.tmpl",
+  
+  "enabledPrints": ["print"],
+  
+  "template": "default.tmpl",
+  
+  "brandName": "Sagsbehandler GIS",
+  
+  "aboutBox": "Denne løsning er rettet mod sagsbehandling"
+  
+}
