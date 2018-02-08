@@ -1,7 +1,6 @@
 {
   "schemata": [
-    "tag:sagsbehandler",
-    "public"
+    "tag:sagsbehandler"
   ],
   
   "baseLayers": [
