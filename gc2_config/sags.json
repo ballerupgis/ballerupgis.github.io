@@ -1,16 +1,28 @@
 {
   "schemata": [
-    "tag:sagsbehandler"
+    "tag:sagsbehandler",
+    "public"
   ],
   
   "baseLayers": [
+    {
+            "id": "geodk.bright",
+            "name": "GeoDanmark kort",
+            "db": "baselayers",
+            "host": "https://gc2.io",
+            "config": {
+                "maxZoom": 21,
+                "maxNativeZoom": 19,
+                "attribution": "&copy; SDFE & MapCentia ApS"
+            }
+    },
     {
       "id": "proj_belysning_indmaaling.ortofoto", "name": "Ortofoto 2017", "db": "ballerup",
       "config": {
           "maxZoom": 23,
           "maxNativeZoom": 21,
           "attribution": "Kortforsyningen"
-      }
+    },
     },
     {"id": "osm", "name": "Open Street Map"},
     {"id": "stamenTonerLite", "name": "Stamen Toner Light"},
@@ -27,15 +39,10 @@
   "searchConfig": {
         "komkode": "151"
   },
-  
   "template": "default.tmpl",
-  
   "enabledPrints": ["print"],
-  
-  "template": "default.tmpl",
-  
+  "template": "default.tmpl",  
   "brandName": "Sagsbehandler GIS",
-  
   "aboutBox": "Denne løsning er rettet mod sagsbehandling"
   
 }
