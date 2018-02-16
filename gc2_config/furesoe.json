@@ -59,7 +59,7 @@
             }
         },
         {"id": "osm", "name": "OSM"},
-        {"id": "stamenTonerLite", "name": "Stamen Toner Light"},
+        {"id": "stamenTonerLite", "name": "Stamen Toner Light"}
   ],
   
   "enabledExtensions": [
