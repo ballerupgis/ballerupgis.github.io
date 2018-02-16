@@ -109,7 +109,7 @@
             }
         },{
             "id": "data.orto_furesoe_2010",
-            "name": "Luftfoto 20010",
+            "name": "Luftfoto 2010",
             "db": "furesoe",
             "host": "http://gc2",
             "config": {
