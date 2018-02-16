@@ -51,7 +51,7 @@
             "id": "data.orto_furesoe_2015",
             "name": "Luftfoto 2015",
             "db": "furesoe",
-            "host": "http://10.192.224.40",
+            "host": "http://gc2",
             "config": {
                 "maxZoom": 21,
                 "maxNativeZoom": 20,
