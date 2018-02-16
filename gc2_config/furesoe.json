@@ -50,7 +50,7 @@
         {
             "id": "data.orto_furesoe_2015",
             "name": "Luftfoto 2015",
-            "db": "baselayers",
+            "db": "furesoe",
             "host": "http://10.192.224.40",
             "config": {
                 "maxZoom": 21,
