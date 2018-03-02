@@ -40,7 +40,7 @@
   "searchConfig": {
         "komkode": "151"
   },
-  extensionConfig: {
+  "extensionConfig": {
       "skolevej": {
             "db": "ballerup",
             "table": "_17_undervisning.skoler_centroid"
