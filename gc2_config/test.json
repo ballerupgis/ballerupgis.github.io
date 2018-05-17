@@ -19,6 +19,7 @@
         "layerSearch",
         "coordinates",
         "streetView",
-        "isochrone"
+        "isochrone",
+        "vidisearch"
    ]
 }
