@@ -55,9 +55,7 @@
         "conflictSearch",
         "streetView",
         "layerSearch",
-        "vidisearch"//,
-        //"skolevej",
-        //"isochrone"
+        "vidisearch"
   ],
   
   "searchConfig": {
