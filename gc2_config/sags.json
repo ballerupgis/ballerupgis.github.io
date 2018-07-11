@@ -5,13 +5,6 @@
   
   "baseLayers": [
     {
-      "id": "proj_belysning_indmaaling.ortofoto", "name": "Ortofoto 2017", "db": "ballerup",
-      "config": {
-        "maxZoom": 23,
-        "maxNativeZoom": 21,
-        "attribution": "Kortforsyningen"
-      }
-    },{
         "id": "geodk.bright",
         "name": "GeoDanmark kort, lavkon",
         "db": "baselayers",
