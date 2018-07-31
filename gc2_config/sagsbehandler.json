@@ -1,7 +1,7 @@
 {
   "schemata": [
-    "tag:_sagsbehandler",
-    "web_sagsbehandler"
+    "web_sagsbehandler",
+    "tag:_sagsbehandler"
   ],
   
   "baseLayers": [
