@@ -1,7 +1,6 @@
 {
   "schemata": [
-    "web_sagsbehandler",
-    "tag:_sagsbehandler"
+    "proj_belysning"
   ],
   
   "baseLayers": [
