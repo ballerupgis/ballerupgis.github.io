@@ -17,7 +17,6 @@
   "enabledExtensions": [
         "conflictSearch"
   ],
-  "template": "min.tmpl",
   "activateMainTab": "conflict",
   "brandName": "Konfliktsøger",    
   "aboutBox": "Konfliktsøgeren bruges som screeningsværktøj i forbindelse med sagsbehandling til at finde ud af, om et interesseområder overlapper med udvalgte GIS-teamer (f.eks. beskyttede naturtyper)"
