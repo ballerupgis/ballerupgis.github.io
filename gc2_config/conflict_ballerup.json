@@ -1,127 +1,20 @@
 {
     "schemata": [
-        "public"
+        "konflikt_bke"
     ],
-    "brandName": "MapCentia ApS",
-    "aboutBox": "<p>My awesome web map</p>",
+    "brandName": "Konfliktsøger",
+    "aboutBox": "<p>Ballerup Kommunes konfliktsøger</p>",
     "enabledExtensions": [
-        "conflictSearch",
-        "streetView",
-        "coordinates",
-        "session",
-        "editor",
-        "offlineMap"
+        "conflictSearch"
     ],
-    "template": "default.tmpl",
-    "baseLayers": [
-        {
-            "id": "osm",
-            "name": "OSM",
-            "abstract": "<p>Some base layer</p>"
+    "extensionConfig": {
+        "conflictSearch": {
+            "startBuffer": 2,
+            "getProperty": true,
+            "searchString": "tag:konflikt",
+            "searchLoadedLayers": true
         },
-        {
-            "id": "geodk.bright-01052019",
-            "name": "GeoDanmark kort",
-            "db": "baselayers",
-            "host": "https://dk.gc2.io",
-            "config": {
-                "maxZoom": 26,
-                "maxNativeZoom": 26,
-                "attribution": "&copy; SDFE & MapCentia ApS"
-            }
-        },
-        {
-            "id": "luftfotoserier.geodanmark_2019_12_5cm",
-            "name": "Luftfoto 2019",
-            "db": "baselayers",
-            "host": "https://dk.gc2.io",
-            "config": {
-                "maxZoom": 26,
-                "maxNativeZoom": 20,
-                "attribution": "&copy; SDFE"
-            }
-        },
-        {
-            "id": "luftfotoserier.geodanmark_2018_12_5cm",
-            "name": "Luftfoto 2018",
-            "db": "baselayers",
-            "host": "https://dk.gc2.io",
-            "config": {
-                "maxZoom": 26,
-                "maxNativeZoom": 20,
-                "attribution": "&copy; SDFE"
-            }
-        },
-        {
-            "id": "luftfotoserier.geodanmark_2017_12_5cm",
-            "name": "Luftfoto 2017",
-            "db": "baselayers",
-            "host": "https://dk.gc2.io",
-            "config": {
-                "maxZoom": 26,
-                "maxNativeZoom": 20,
-                "attribution": "&copy; SDFE"
-            }
-        },
-        {
-            "id": "luftfotoserier.geodanmark_2016_12_5cm",
-            "name": "Luftfoto 2016",
-            "db": "baselayers",
-            "host": "https://dk.gc2.io",
-            "config": {
-                "maxZoom": 26,
-                "maxNativeZoom": 20,
-                "attribution": "&copy; SDFE"
-            }
-        },
-        {
-            "id": "kortforsyningen.dtk_lave_maalebordsblade",
-            "name": "Lave målebordsblade",
-            "db": "baselayers",
-            "host": "https://dk.gc2.io",
-            "config": {
-                "maxZoom": 26,
-                "maxNativeZoom": 20,
-                "attribution": "&copy; Kortforsyningen"
-            }
-        },
-        {
-            "id": "kortforsyningen.dtk_hoeje_maalebordsblade",
-            "name": "Høje målebordsblade",
-            "db": "baselayers",
-            "host": "https://dk.gc2.io",
-            "config": {
-                "maxZoom": 26,
-                "maxNativeZoom": 20,
-                "attribution": "&copy; Kortforsyningen"
-            }
-        },
-        {
-            "id": "kortforsyningen.topo25",
-            "name": "Topografisk kort, 1:25.000",
-            "db": "baselayers",
-            "host": "https://dk.gc2.io",
-            "config": {
-                "maxZoom": 26,
-                "maxNativeZoom": 20,
-                "attribution": "&copy; Kortforsyningen"
-            }
-        },
-        {
-            "id": "dtkSkaermkort",
-            "name": "DTK Skærmkort"
-        },
-        {
-            "id": "dtkSkaermkortDaempet",
-            "name": "DTK Skærmkort, dæmpet"
-        },
-        {
-            "id": "dtkSkaermkortGraa",
-            "name": "DTK Skærmkort, grå"
-        },
-        {
-            "id": "stamenTonerLite",
-            "name": "Stamen Toner Light"
-        }
-    ]
+        "template": "default.tmpl",
+        "activateMainTab": "conflict"
+    }
 }
