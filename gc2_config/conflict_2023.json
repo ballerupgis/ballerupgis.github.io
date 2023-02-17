@@ -7,74 +7,83 @@
     "enabledExtensions": [
         "conflictSearch"
     ],
-    
     "baseLayers": [
-            {
-                "id": "osm",
-                "name": "OSM",
-                "abstract": "<p>Some base layer</p>"
-            },
-            {
-                "type": "wms",
-                "url": "https://api.dataforsyningen.dk/orto_sommer_2022?token=find-selv-ud-af-det",
-                "layers": [
-                    "orto_sommer_2022"
-                ],
-                "id": "orto_sommer_2022",
-                "name": "Luftfoto 2022 – sommer",
-                "attribution": "Styrelsen for Dataforsyning og Effektivisering",
-                "minZoom": 8,
+        {
+            "id": "osm",
+            "name": "OSM",
+            "abstract": "<p>Some base layer</p>"
+        },
+        {
+            "type": "wms",
+            "url": "https://api.dataforsyningen.dk/orto_foraar_DAF?token=xxxx",
+            "layers": [
+                "Geodanmark_2022_10cm"
+            ],
+            "id": "Ortofoto forår 2022 10cm",
+            "name": "Ortofoto 2022 10cm",
+            "description": "geodanmark_2020_12_5cm",
+            "attribution": "Styrelsen for Dataforsyning og Effektivisering",
+            "minZoom": 8,
+            "maxZoom": 22,
+            "maxNativeZoom": 22,
+            "transparent": true
+        },
+        {
+            "id": "luftfotoserier.geodanmark_2021_12_5cm",
+            "name": "Luftfoto 2021",
+            "db": "baselayers",
+            "host": "https://dk.gc2.io",
+            "config": {
                 "maxZoom": 26,
-                "maxNativeZoom": 22,
-                "transparent": true,
-                "abstract": "<p>SOMMER kort fra Kortforsyningens Natur_friluftskort-tjenesten, som bliver ajourført 3-4 gange årligt.</p><p>Copyright: Styrelsen for Dataforsyning og Effektivisering og Danske kommuner.</p><p>Baggrundskortet må frit anvendes, men følgende skal angives 'Indeholder GeoDanmark-data fra Styrelsen for Dataforsyning og Effektivisering og Danske kommuner, Natur_friluftskort-tjenesten.'.</p><br><img src='https://nextcloud.gc2.io/index.php/apps/files_sharing/publicpreview/jepxPpnMNEkHik4?x=2553&y=827&a=true&file=natur_friluftskort.png&scalingup=0' class='img-fluid'>"
-            },
-            {
-                "id": "luftfotoserier.geodanmark_2021_12_5cm",
-                "name": "Luftfoto 2021",
-                "db": "baselayers",
-                "host": "https://dk.gc2.io",
-                "config": {
-                    "maxZoom": 26,
-                    "maxNativeZoom": 20,
-                    "attribution": "&copy; SDFE"
-                }
-            },
-            {
-                "id": "luftfotoserier.geodanmark_2018_12_5cm",
-                "name": "Luftfoto 2018",
-                "db": "baselayers",
-                "host": "https://dk.gc2.io",
-                "config": {
-                    "maxZoom": 26,
-                    "maxNativeZoom": 20,
-                    "attribution": "&copy; SDFE"
-                }
-            },
-            {
-                "id": "luftfotoserier.geodanmark_2017_12_5cm",
-                "name": "Luftfoto 2017",
-                "db": "baselayers",
-                "host": "https://dk.gc2.io",
-                "config": {
-                    "maxZoom": 26,
-                    "maxNativeZoom": 20,
-                    "attribution": "&copy; SDFE"
-                }
-            },
-            {
-                "id": "luftfotoserier.geodanmark_2020_12_5cm",
-                "name": "Luftfoto 2020",
-                "db": "baselayers",
-                "host": "https://dk.gc2.io",
-                "config": {
-                    "maxZoom": 26,
-                    "maxNativeZoom": 20,
-                    "attribution": "&copy; SDFE"
-                }
+                "maxNativeZoom": 20,
+                "attribution": "&copy; SDFE"
             }
-        ],
-    
+        },
+        {
+            "id": "luftfotoserier.geodanmark_2020_12_5cm",
+            "name": "Luftfoto 2020",
+            "db": "baselayers",
+            "host": "https://dk.gc2.io",
+            "config": {
+                "maxZoom": 26,
+                "maxNativeZoom": 20,
+                "attribution": "&copy; SDFE"
+            }
+        },
+        {
+            "id": "luftfotoserier.geodanmark_2019_12_5cm",
+            "name": "Luftfoto 2019",
+            "db": "baselayers",
+            "host": "https://dk.gc2.io",
+            "config": {
+                "maxZoom": 26,
+                "maxNativeZoom": 20,
+                "attribution": "&copy; SDFE"
+            }
+        },
+        {
+            "id": "luftfotoserier.geodanmark_2018_12_5cm",
+            "name": "Luftfoto 2018",
+            "db": "baselayers",
+            "host": "https://dk.gc2.io",
+            "config": {
+                "maxZoom": 26,
+                "maxNativeZoom": 20,
+                "attribution": "&copy; SDFE"
+            }
+        },
+        {
+            "id": "luftfotoserier.geodanmark_2017_12_5cm",
+            "name": "Luftfoto 2017",
+            "db": "baselayers",
+            "host": "https://dk.gc2.io",
+            "config": {
+                "maxZoom": 26,
+                "maxNativeZoom": 20,
+                "attribution": "&copy; SDFE"
+            }
+        }
+    ],
     "extensionConfig": {
         "conflictSearch": {
             "startBuffer": 2,
